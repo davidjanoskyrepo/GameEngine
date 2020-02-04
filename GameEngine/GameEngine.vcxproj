@@ -92,7 +92,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -148,7 +148,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="create_window.cpp" />
-    <ClCompile Include="game_engine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BMP.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
